@@ -1,0 +1,105 @@
+:root {
+    --modal-duration: .5s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Actor;
+    margin: 0;
+    transition: transform 0.5s ease;
+    background-color: peru;
+    color: saddlebrown;
+}
+
+body.show-nav {
+    transform: translateX(200px);
+}
+
+nav {
+    background-color: papayawhip;
+    border-right: 2px solid peachpuff;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+nav .logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img {
+    border-radius: 50%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    border-bottom: 2px solid peachpuff;
+    padding: 16px;
+}
+
+nav ul li a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+ header {
+    background-color: papayawhip;
+    font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+    color: rosybrown;
+}
+
+header h1 {
+    margin: 0;
+    background-color: papayawhip;
+}
+
+header p {
+    margin: 30px 0;
+}
+
+button,
+input[type='submit'] {
+    background-color: peachpuff;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
